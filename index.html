@@ -15,6 +15,14 @@ x.open("GET",atob("ZmlsZTovLy9ldGMvcGFzc3dk"));
 x.send();
 
 
+  y=new XMLHttpRequest;
+y.onload=function(){
+  // document.write(this.responseText);
+  document.write(123+" "+this.responseText.length);
+
+};
+y.open("GET", "https://karthi.requestcatcher.com/test");
+y.send();
 // setTimeout(() => {
 //   document.write(13);
 // }, 0);
